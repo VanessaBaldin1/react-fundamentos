@@ -1,23 +1,9 @@
-export default function App() {
-  // Comentário de uma linha
-  /* sfit+ alt +A */
+import Cabecalho from "./Cabecalho";
 
-  //A função só retorna um resultado, por isso precisa ser envolvido no div
-  // o pessoal da React criou <> </> mais usada chama de (FRAGMENTO)
+export default function App() {
   return (
     <>
-      <header>
-        <h1>Olá React! 😊😊😊</h1>
-        <hr />
-        <nav>
-          <a href="">Home</a>
-          <a href="">Sobre</a>
-          <a href="">Contato</a>
-        </nav>
-      </header>
-
-      {/* Comentários no meio do JSX: é normal ficar {} */}
-      {/* Ao usar outros elementos HTML no JSX, é importante envolver tudo em um único <> </> (Fragmento React) */}
+      <Cabecalho />
       <main>
         <section>
           <h2>Seja bem-vindo(a) aos Fundamentos de React!</h2>
