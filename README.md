@@ -10,7 +10,7 @@
 ## 01_usando-a-sintaxe-JSX-no-App
 
 - Construção de um componente único (App.tsx) usando elementos HTML e Fragmento REACT
-- Referência sobre Componentes e JSX: https://react.dev/reference/react/Component
+- Referência sobre Componentes e JSX: https://react.dev/reference/react-dom/components
 - Instalação da extensão React Developer Tools
 
 ## 00_projeto-zerado
