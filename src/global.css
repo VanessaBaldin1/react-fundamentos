@@ -18,3 +18,14 @@ body {
   background-color: #f5f5f5;
   color: #333;
 }
+
+/* Seletor descendente */
+footer p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Seletor classe */
+
+.outro-texto {
+  text-transform: uppercase;
+}
