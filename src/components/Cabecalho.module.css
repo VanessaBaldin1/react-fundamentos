@@ -3,10 +3,23 @@ Exemplo: topo-site {}
 Isso, vai te obrigar a usar a classe através de sintaxe de array com colchetes. */
 
 /* Prefira usar a sintaxe camelCase (ou snake_case: .topo_site) */
+
+/* classe dentro de classe para regra */
 .topoSite {
   background-color: #20232a;
   color: #61dafb;
   padding: 1rem;
+
+  a {
+    color: orange;
+    text-decoration: none;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid;
+    margin: 0.4rem 0;
+  }
 }
 
 .logo {
@@ -22,3 +35,10 @@ Isso, vai te obrigar a usar a classe através de sintaxe de array com colchetes.
   gap: 0.5rem;
   font-size: 1.5rem;
 }
+
+/* Classe/Seletor Descendente:
+Formata os links contidos na classe do header */
+/* .topoSite a {
+  text-decoration: none;
+  color: rgba(221, 173, 230, 0.692);
+} */
