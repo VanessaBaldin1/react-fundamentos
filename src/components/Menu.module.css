@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+.link:hover {
+  color: white;
+  font-size: 23px;
+}
+
+.links:focus {
+  color: white;
+  font-size: 23px;
+}

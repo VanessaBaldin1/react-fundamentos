@@ -11,8 +11,9 @@ Isso, vai te obrigar a usar a classe através de sintaxe de array com colchetes.
   padding: 1rem;
 
   a {
-    color: orange;
+    color: #61dafb;
     text-decoration: none;
+    font-size: 14px;
   }
 
   hr {
