@@ -1,5 +1,11 @@
 # Fundamentos de React
 
+## 03_componentes-filhos-ou-internos
+
+- Criação de um componente filho(Menu) e importação /uso no pai (Cabeçalho)
+- Criação de um componente filho (Artigo) e importação/uso no pai (Conteudo)
+- Instalação da extensão ES7+ React
+
 ## 02_criando-e-organizando-componentes
 
 - Separação de trechos do App em novos componentes
