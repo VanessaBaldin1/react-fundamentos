@@ -1,4 +1,4 @@
-export default function () {
+export default function Menu() {
   return (
     <nav>
       <a href="">Home</a>
