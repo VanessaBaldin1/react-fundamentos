@@ -1,0 +1,40 @@
+import styled from "styled-components";
+
+//Simulando uma mudança de tema
+let tema: boolean = true;
+
+export const StyledDicaDoDia = styled.section`
+  //Avaliando se o tema simulado é true (aplica verde) ou false (aplica azul)
+  background-color: ${tema ? "#e8f5e9" : "lightblue"};
+  border-left: 5px solid darkgreen;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+
+  h3 {
+    margin-top: 0;
+    color: #020241;
+  }
+
+  p {
+    color: #027c62df;
+    font-size: 1.1rem;
+  }
+
+  .site-oficial {
+    background-color: white;
+    text-align: center;
+    padding: 0.4rem;
+
+    a {
+      text-decoration: none;
+      color: darkblue;
+      font-weight: bold;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+`;
