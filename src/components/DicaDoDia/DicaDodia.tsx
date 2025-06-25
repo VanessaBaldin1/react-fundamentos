@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
+//Simulando uma mudança de tema
+let tema: boolean = true;
+
 const StyledDicaDoDia = styled.section`
-  background-color: #e8f5e9;
+  //Avaliando se o tema simulado é true (aplica verde) ou false (aplica azul)
+  background-color: ${tema ? "#e8f5e9" : "lightblue"};
   border-left: 5px solid darkgreen;
   padding: 1rem;
   margin-top: 1rem;
