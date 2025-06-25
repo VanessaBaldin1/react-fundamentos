@@ -1,6 +1,6 @@
-import Artigo from "../Artigo/Artigo";
-import AvisoImportante from "../AvisoImportante/AvisoImportante";
-import DicaDodia from "../DicaDoDia/DicaDodia";
+import Artigo from "./Artigo/Artigo";
+import AvisoImportante from "./AvisoImportante/AvisoImportante";
+import DicaDodia from "./DicaDoDia/DicaDodia";
 import estilos from "./Conteudo.module.css";
 
 export default function Conteudo() {
