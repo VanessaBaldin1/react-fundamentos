@@ -1,6 +1,8 @@
+import estilos from "./Artigo.module.css";
+
 export default function Artigo() {
   return (
-    <article>
+    <article className={estilos.artigo}>
       <h3>Artigo 1 de Exemplo</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aperiam
