@@ -17,11 +17,23 @@ export default function Conteudo() {
 
         <p>Este é um exemplo de aplicação React.</p>
 
-        <Artigo />
+        <Artigo
+          titulo="Front-End"
+          texto="Um texto qualquer sobre Front"
+          numero={1}
+        />
 
-        <Artigo />
+        <Artigo
+          titulo="Back-End"
+          texto="Um texto qualquer sobre Back"
+          numero={2}
+        />
 
-        <Artigo />
+        <Artigo
+          titulo="Mobile"
+          texto="Um texto qualquer sobre Mobile"
+          numero={3}
+        />
       </section>
 
       <DicaDodia />
