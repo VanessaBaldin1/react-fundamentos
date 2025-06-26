@@ -1,5 +1,6 @@
 @import "tailwindcss";
-*,
+
+/* *,
 *::after,
 *::before {
   box-sizing: border-box;
@@ -12,7 +13,7 @@ h3,
 p {
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
