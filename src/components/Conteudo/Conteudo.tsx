@@ -21,9 +21,11 @@ export default function Conteudo() {
       </section>
 
       {/* Usando MAP no Artigo  */}
-      {cursos.map((curso) => {
-        return <Artigo dados={curso} key={curso.id} />;
-      })}
+      <div className={estilos.artigos}>
+        {cursos.map((curso) => (
+          <Artigo dados={curso} key={curso.id} />
+        ))}
+      </div>
 
       <DicaDodia />
 
