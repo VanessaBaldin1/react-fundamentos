@@ -7,6 +7,7 @@ type ArtigoProps = {
 
 // Deixando o conteudo dinâmico as chamadas/aplicações são direto com { }
 
+//
 export default function Artigo({ dados }: ArtigoProps) {
   const { titulo, preco, categoria } = dados;
   return (
