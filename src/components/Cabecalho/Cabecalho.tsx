@@ -17,9 +17,13 @@ export default function Cabecalho() {
   //no Caso, do useState, usando desestruturação, criamos uma constate que representa o valor do state (titulo) e uma função responsável por atualizar o state (setTitulo)
   const [titulo, setTitulo] = useState("Olá React!");
 
+  const alternarTitulo = () => {
+    setTitulo("Experimentando States!");
+  };
+
   return (
     <header className={estilos.topoSite}>
-      <h1 onClick={() => alert("Olá!")} className={estilos.titulo}>
+      <h1 onClick={alternarTitulo} className={estilos.titulo}>
         <img className={estilos.logo} src={logo} alt="" /> {titulo} 😊😊😊
       </h1>
       <hr />
