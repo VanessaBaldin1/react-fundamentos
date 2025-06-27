@@ -6,8 +6,8 @@ import ListaCursos from "./ListaCursos/ListaCursos";
 import cursos from "../../data/cursos";
 
 export default function Conteudo() {
+  //Criando o map para categoria e gerar botão
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
-  console.log(categorias);
 
   return (
     <main className={estilos.conteudo}>
@@ -19,6 +19,15 @@ export default function Conteudo() {
         <Saudacao classe="bg-blue-200" />
 
         <p>Este é um exemplo de aplicação React.</p>
+
+        {/* cria botão com o testo dentro de cada categoria */}
+        {categorias.map((categoria) => {
+          return (
+            <button className="rounded py-1 px-2 mr-1 my-1 bg-amber-200 hover:bg-green-300">
+              {categoria}
+            </button>
+          );
+        })}
 
         <ListaCursos />
       </section>
