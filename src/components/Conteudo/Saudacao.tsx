@@ -1,17 +1,22 @@
-// Declara um tipo que será usado pelas props do Componente
 type SaudacaoProps = {
   nome?: string; //props opcional
   classe: string;
 };
 
 export default function Saudacao({
-  //Caso nome não seja informado (opcional), visitante será usado
   nome = "Visitante",
   classe,
 }: SaudacaoProps) {
+  // no onClick somente o nome da função sem ()
+
+  // callback chamada pelo evento
+  function exemploEvento() {
+    alert("Evento com chamada de callback externa");
+  }
+
   return (
     <p className={`my-2 rounded text-center ${classe}`}>
-      Seja bem-vindo(a) <b>{nome}</b>
+      Seja bem-vindo(a) <b onClick={exemploEvento}>{nome}</b>
     </p>
   );
 }
