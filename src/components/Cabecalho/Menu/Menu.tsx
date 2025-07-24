@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import estilosMenu from "./Menu.module.css";
 
 export default function Menu() {
   return (
     <nav className={estilosMenu.nav}>
-      <a className={estilosMenu.link} href="">
+      <Link className={estilosMenu.link} to="/">
         Home
-      </a>
-      <a className={estilosMenu.link} href="">
+      </Link>
+      <Link className={estilosMenu.link} to="/sobre">
         Sobre
-      </a>
-      <a className={estilosMenu.link} href="">
+      </Link>
+      <Link className={estilosMenu.link} to="/contato">
         Contato
-      </a>
+      </Link>
     </nav>
   );
 }
