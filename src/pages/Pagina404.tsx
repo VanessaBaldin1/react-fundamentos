@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Pagina404() {
   return (
     <section>
@@ -14,8 +16,8 @@ export default function Pagina404() {
       </p>
 
       <p>
-        🔁 Voltar ao início 🔍 Ou continue sua jornada pelo nosso site e
-        descubra novos mundos!
+        <Link to="/">🔁 Voltar ao início</Link>
+        🔍 Ou continue sua jornada pelo nosso site e descubra novos mundos!
       </p>
     </section>
   );
