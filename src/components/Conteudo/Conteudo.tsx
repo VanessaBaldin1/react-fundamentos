@@ -4,7 +4,7 @@ import estilos from "./Conteudo.module.css";
 import Saudacao from "./Saudacao";
 import ListaCursos from "./ListaCursos/ListaCursos";
 import cursos from "../../data/cursos";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Conteudo() {
   //Definindo o state para categoria ativa/selecionada, podendo ser null (valor padrão, inicial) ou string (quando uma categoria for selecionada)
@@ -12,6 +12,13 @@ export default function Conteudo() {
   const [categoriaAtiva, setCategoriaAtiva] = useState<null | string>(null);
 
   const categorias = [...new Set(cursos.map((curso) => curso.categoria))];
+
+  // Trocando o title da página conforme a categoria escolhida
+  useEffect(() => {
+    document.title = categoriaAtiva
+      ? categoriaAtiva + " | Meu App React"
+      : "Meu App React";
+  }, [categoriaAtiva]);
 
   return (
     <>
