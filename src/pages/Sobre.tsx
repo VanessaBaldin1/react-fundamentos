@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 export default function Sobre() {
+  useEffect(() => {
+    document.title = "Sobre | Meu app React";
+  });
+
   return (
     <section>
       <h2>Sobre nossa empresa</h2>
